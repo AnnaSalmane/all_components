@@ -1,3 +1,5 @@
+/** @format */
+
 body {
   background: #e5e5e5;
 }
@@ -23,6 +25,9 @@ body {
       color: #9fa2b4;
       text-align: left;
     }
+    tr {
+      height: 92px;
+    }
   }
 }
 
@@ -32,4 +37,24 @@ h1 {
   letter-spacing: 0.4px;
 }
 
+.priority {
+  text-transform: uppercase;
+  font-size: 11px;
+  border-radius: 100px;
+  color: #fff;
+  background: #000;
+  padding: 0.5em 1em;
+  letter-spacing: 0.35em;
+}
 
+.priority_high {
+  background: #f12b2c;
+}
+
+.priority_low {
+  background: #fec400;
+}
+
+.priority_normal {
+  background: #29cc97;
+}
