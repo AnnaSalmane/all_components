@@ -7,19 +7,57 @@
     <input type="text" v-model="title">
 
     <div class="tickets">
+        <div class="sidebar">
+
+        </div>
         <div class="tickets__header">
             <h1 v-text="title"></h1>
+            <tickets_table columns="ticket_titles"></tickets_table>
         </div>
+        
+
     </div>
 
 </div>
 
 <script>
+    function createRowHeaders(headers) {
+        let output = '';
+        for (let header of headers) {
+            output = "<th>" + header + "</th>";
+        }
+        return output;
+    }
+    Vue.component('tickets_table', {
+        props: ["columns"],
+        template: `
+        <table class="tickets__list">
+            <tr>
+                ` + createRowHeaders(headers) +
+                `
+            </tr>
+            <tr>
+                <td>
+                    <span>Contact Email not Linked</span>
+                </td>
+                <td>
+                    Tom Cruise
+                </td>
+                <td>May 26, 2019</td>
+                <td>
+                    <span class="high">high</span>
+                </td>
+            </tr>
+        </table>
+        `
+    });
+
+
     let app = new Vue({
         el: "#app",
         data: {
-            title: "All tickets"  // šeit var likt komatu un pievienot vēl mainīgos
+            title: "All tickets",
+            ticket_titles: [Ticket details, Customer name, Date, Priority]
         }
-    })
+    });
 </script>
-

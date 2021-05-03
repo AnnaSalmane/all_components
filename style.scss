@@ -9,10 +9,20 @@ body {
   border: 1px solid #dfe0eb;
   box-sizing: border-box;
   border-radius: 8px;
-  margin-top: 128px;
 
   &__header {
     padding: 32px;
+  }
+
+  &__list {
+    width: 100%;
+    th {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: #9fa2b4;
+      text-align: left;
+    }
   }
 }
 
@@ -21,3 +31,5 @@ h1 {
   line-height: 24px;
   letter-spacing: 0.4px;
 }
+
+
