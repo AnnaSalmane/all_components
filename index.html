@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <input type="text" v-model="title">
+
+    <div class="tickets">
+        <div class="tickets__header">
+            <h1 v-text="title"></h1>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    let app = new Vue({
+        el: "#app",
+        data: {
+            title: "All tickets"  // šeit var likt komatu un pievienot vēl mainīgos
+        }
+    })
+</script>
+

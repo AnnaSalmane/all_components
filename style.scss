@@ -1,0 +1,23 @@
+body {
+  background: #e5e5e5;
+}
+
+.tickets {
+  height: 942px;
+  width: 1122px;
+  background: #fff;
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 128px;
+
+  &__header {
+    padding: 32px;
+  }
+}
+
+h1 {
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
